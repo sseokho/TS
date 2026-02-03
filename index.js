@@ -1,1 +1,5 @@
-var 이름 = 'kim';
+var project = {
+    member: ['kim', 'park'],
+    days: 30,
+    started: true,
+};
