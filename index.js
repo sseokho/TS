@@ -1,12 +1,15 @@
-var utils = {
-    cutZero: function (x) {
-        if (x[0] === '0') {
-            return x.slice(1);
-        }
-    },
-    removeDash: function (x) {
-        return x.replace(/-/g, "");
-    }
-};
-utils.cutZero("0림");
-utils.removeDash("dsf-fdsfdsf-dsf");
+function 함수1(x, y, z) {
+    x();
+    y();
+    z();
+}
+//문자
+function 함수2() {
+}
+//함수
+function 함수3() {
+}
+//함수
+function 함수4() {
+}
+함수1(함수(2), 함수(3), 함수(4));
