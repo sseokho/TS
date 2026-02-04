@@ -1,19 +1,7 @@
-
-function 함수1(x,y,z){
-    x();
-    y();
-    z();
+interface Child {
+  plus: (x: number, y: number) => number;
 }
-//문자
-function 함수2(){
-    
-}
-//함수
-function 함수3(){
-    
-}
-//함수
-function 함수4(){
-    
-}
-함수1(함수(2),함수(3),함수(4));
+const 장바구니: Child = {
+  plus :(x,y) => x + y
+};
+console.log(장바구니.plus(3,6));

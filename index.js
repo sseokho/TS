@@ -1,15 +1,5 @@
-function 함수1(x, y, z) {
-    x();
-    y();
-    z();
-}
-//문자
-function 함수2() {
-}
-//함수
-function 함수3() {
-}
-//함수
-function 함수4() {
-}
-함수1(함수(2), 함수(3), 함수(4));
+"use strict";
+var 장바구니 = {
+    plus: function (x, y) { return x + y; }
+};
+console.log(장바구니.plus(3, 6));
