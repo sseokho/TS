@@ -1,34 +1,52 @@
-class Square{
-    private width: number
-    private height: number
-    private bg: string
-    constructor(width:number,height:number,bg:string){
-        this.width = width
-        this.height = height
-        this.bg = bg
-    }
+// interface LengthCheck{
+//   length : number
+// }
+// function 함수<MyType extends LengthCheck>(x:MyType){
+//   return x.length
+// }
 
-    public draw(){
-        const body = document.querySelector('body')
-        const box = document.createElement('div')
-
-        const randomX = Math.floor(Math.random() * (window.innerWidth));
-        const randomY = Math.floor(Math.random() * (window.innerHeight));
+// let a = 함수<string>('21323')
+// console.log(a);
 
 
-        box.style.width = `${this.width}px`;
-        box.style.height = `${this.height}px`;
-        box.style.background = this.bg;
 
 
-        box.style.position = 'absolute'; 
-        box.style.left = `${randomX}px`;
-        box.style.top = `${randomY}px`;
+
+// type 타입 = {
+//   length : number;
+// }
+// function 함수<MyType extends 타입>(x:MyType){
+//   return x.length
+// }
 
 
-        document.body?.appendChild(box);
-    }
+
+
+
+// // let 값 = 함수<string>('hello') 
+// let 값 = 함수<string[]>( ['kim', 'park'] ) 
+// console.log(값)
+
+
+
+
+interface Animal {
+  name : string;
+  age : number 
 }
-let 네모 = new Square(30, 30, 'red');
-네모.draw()
-네모.draw()
+
+
+function 함수<T>(x:string){
+  return JSON.parse(x)
+}
+let data = '{"name" : "dog", "age" : 1 }'
+let 값 = 함수<Animal>(data) 
+
+
+
+
+console.log(값)
+
+
+
+// return JSON.parse(data);
