@@ -1,14 +1,22 @@
 "use strict";
-// interface LengthCheck{
-//   length : number
+// 숙제 2
+// interface Animal {
+//   name : string;
+//   age : number
 // }
-// function 함수<MyType extends LengthCheck>(x:MyType){
-//   return x.length
+// function 함수<T extends Animal>(x:string):T{
+//   return JSON.parse(x)
 // }
-function 함수(x) {
-    return JSON.parse(x);
-}
-var data = '{"name" : "dog", "age" : 1 }';
-var 값 = 함수(data);
-console.log(값);
-// return JSON.parse(data);
+// let data = '{"name" : "dog", "age" : 1 }';
+// let 값 = 함수<Animal>(data)
+// console.log(값);
+// class Person<T extends string | number | string[]> {
+//   name: T;
+//   constructor(a :T){
+//     this.name = a;
+//   }
+// }
+// let a = new Person<string>('어쩌구');
+// let b = new Person<number>(123);
+// let c = new Person<string[]>(["gg","gg"]);
+// a.name //any 타입이 되었넹
