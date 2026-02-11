@@ -1,6 +1,4 @@
 "use strict";
-var Car = /** @class */ (function () {
-    function Car() {
-    }
-    return Car;
-}());
+// type 타입추출<T> = T extends ( () => infer R) ? R :unknown;
+var age1;
+var age2;
